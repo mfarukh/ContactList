@@ -1,0 +1,114 @@
+<html>
+<head><title>Contact List</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<body>
+<button type="button" onclick="displayAddNewContact()" class="submitBtn">Create New Contact</button>
+<button type="button" id="deleteAll" style="position: absolute; right: 0;"
+        class="deleteBtn" >Delete All Contacts</button>
+
+<div id= "newContact" style="display:none" class="main-div">
+	<table style="width:100%">
+  		<div id="heading">New Contact</div> <br>
+  		<tr>
+  			<td class="inputFont">First name:</td>
+  			<td class="inputFont"><input type="text" id="fname" 
+  				name="fname" placeholder="First name">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td class="inputFont">Last name:</td>
+  			<td class="inputFont"><input type="text" id="lname" 
+  				name="lname" placeholder="Last name">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td class="inputFont">Email:</td>
+  			<td class="inputFont"><input type="text" id="email" 
+  				name="email" placeholder="username@abc.com">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td class="inputFont">Phone Number:</td>
+  			<td class="inputFont"><input type="text" id="phone" 
+  				name="phone" placeholder="123-456-789">
+  			</td>
+  		</tr>
+  		<tr>
+  			<td class="inputFont">Status: </td>
+  			<td class="inputFont"><select id="status">
+  					<option value="Active">Active</option>
+  					<option value="Inactive">Inactive</option>
+  				</select>
+  			</td>
+  		</tr>
+  		<tr>
+  			<td class="inputFont"><button type="button"  id="submitButton" class="submitBtn">
+  				Submit</button> 
+  			</td>
+  			<td></td>
+  		</tr>
+
+	</table> 
+</div>
+
+<div id= "editContact" style="display:none" class="main-div">
+ 	<table style="width:100%">
+  		<div id="heading">Update Contact</div> <br>
+  			<tr>
+  				<td id="labels" class="inputFont"></td>
+  				<td id="inputs" class="inputFont"></td>
+  			</tr>
+  			<tr>
+  				<td id="labels2" class="inputFont"></td>
+  				<td id="inputs2" class="inputFont"></td>
+  			</tr>
+  			<tr>
+  				<td id="labels3" class="inputFont"></td>
+  				<td id="inputs3" class="inputFont"></td>
+  			</tr>
+  			<tr>
+  				<td id="labels4" class="inputFont"></td>
+  				<td id="inputs4" class="inputFont"></td>
+  			</tr>
+  			<tr>
+  				<td id="labels5" class="inputFont"></td>
+  				<td id="inputs5" class="inputFont"></td>
+  			</tr>
+  			<tr>
+  				<td id="labels6" class="inputFont"></td>
+  				<td id="inputs6" class="inputFont"></td>
+  			</tr>
+  	</table>
+</div>
+
+
+<table id="users_list" class="table table-hover table-condensed table-responsive">
+   <tr>
+       <th><b>First Name<b/></th>
+       <th><b>Last Name<b/></th>
+       <th><b>Email<b/></th>
+       <th><b>Phone<b/></th>
+       <th id="statusColumn"><b>Status<b/></th>
+       <th><b>Delete Contact</b></th>
+       <th><b>Edit Contact</b></th>
+   </tr>
+</table>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/verification.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+body{
+	background-color:#f2f2f2;
+}
+
+.main-div {
+  background: #d0e1e1 none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 10px;
+  max-width: 40%;
+  padding: 50px 50px 50px 50px;
+  color: #3d5c5c;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.inputFont {
+  color: #3d5c5c;
+  font-size: 16px;
+  width=100px;
+  font-weight: bold;
+}
+
+.deleteBtn {
+  background-color: #f76f87;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+	background-color: #f293a4
+}
+
+.deleteContact {
+  background-color: #b32400;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.submitBtn {
+  background-color: #009933;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #00cc44;
+  color: white;
+}
+
+#updB {
+  background-color: #009933;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+#dBtn {
+  background-color: #f76f87;
+  border: none;
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition: 0.3s;
+}
+
+#editBtn {
+  background-color: #009933;
+  border: none;
+  color: white;
+  padding: 3px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition: 0.3s;
+}
+
+
+#updateBtn {
+  background-color: #009933;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+#updateBtn:hover {
+  background-color: #00cc44;
+  color: white;
+}
+  
+#users_list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    color: #3d5c5c;
+    text-align: center;
+    background-color: #d0e1e1;
+}
+
+#users_list tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #3d5c5c;
+}
+
+#users_list tr:nth-child(even){
+	background-color: #e8eaed;
+}
+
+#heading {
+	font-size: 24px;
+}
+
+:placeholder-shown {
+  color: #efeded;
+  font-family: "Times New Roman", Times, serif;
+}
